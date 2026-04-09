@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История реализации продукции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="btn-back" id="backBtn">← Назад к списку</button>
+            <h1 id="partner-name-title">История продаж</h1>
+        </header>
+
+        <main>
+            <div class="sales-table-wrapper">
+                <table class="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Наименование продукции</th>
+                            <th>Количество</th>
+                            <th>Дата продажи</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sales-table-body">
+                        <tr><td colspan="3" class="loading-cell">Загрузка истории...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="sales-history.js"></script>
+</body>
+</html>
